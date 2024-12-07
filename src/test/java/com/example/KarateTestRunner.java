@@ -19,8 +19,6 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
 
-
-
 //@RunWith(Karate.class)  // JUnit 4 Runner for Karate tests
 public class KarateTestRunner {
     // No need to manually call Karate.run here

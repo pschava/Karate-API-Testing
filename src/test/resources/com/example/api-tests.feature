@@ -1,5 +1,6 @@
 Feature: Example API test
 
+
 Background:
 # Define the base URL
 * url baseUrl
