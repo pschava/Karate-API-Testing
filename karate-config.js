@@ -2,7 +2,7 @@ function fn() {
     var config = {
         // Your custom configuration values here
         environment: 'test',  // Example configuration value
-        baseUrl: 'https://api.example.com'
+        baseUrl: 'https://jsonplaceholder.typicode.com'
     };
 
     // Karate-specific configuration for reporting and other settings
@@ -18,4 +18,3 @@ function fn() {
     // Return the configuration object
     return config;
 }
-
