@@ -19,15 +19,14 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
 
-
-
 //@RunWith(Karate.class)  // JUnit 4 Runner for Karate tests
 public class KarateTestRunner {
     // No need to manually call Karate.run here
 	
 	@Test
 	   public void testParallel() {
-	       Results results = Runner.path("classpath:com/example/api-tests.feature").tags("@done").outputCucumberJson(true).parallel(1);
+	       //Results results = Runner.path("classpath:com/example/api-tests.feature").tags("@done").outputCucumberJson(true).parallel(1);
+	       Results results = Runner.path("classpath:com/example/api-tests.feature").outputCucumberJson(true).parallel(1);
 	       generateReport(results.getReportDir());
 	       System.out.println("this is "+results.getReportDir());
 	       assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
