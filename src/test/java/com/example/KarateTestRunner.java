@@ -1,4 +1,6 @@
 package com.example;
+//import static org.junit.Assert.assertTrue;
+
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
@@ -7,16 +9,17 @@ import java.util.Collection;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+//import org.junit.jupiter.api.Test;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-import com.intuit.karate.junit4.Karate;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
+
+
+
 
 
 //@RunWith(Karate.class)  // JUnit 4 Runner for Karate tests
@@ -27,6 +30,7 @@ public class KarateTestRunner {
 	   public void testParallel() {
 	       //Results results = Runner.path("classpath:com/example/api-tests.feature").tags("@done").outputCucumberJson(true).parallel(1);
 	       Results results = Runner.path("classpath:com/example/api-tests.feature").outputCucumberJson(true).parallel(1);
+	       //Results results = Runner.path("classpath:com/example/auth-and-protected-test.feature").outputCucumberJson(true).parallel(1);
 	       generateReport(results.getReportDir());
 	       System.out.println("this is "+results.getReportDir());
 	       assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
