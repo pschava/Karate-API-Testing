@@ -26,6 +26,7 @@ import net.masterthought.cucumber.ReportBuilder;
 public class KarateTestRunner {
     // No need to manually call Karate.run here
 	
+	
 	@Test
 	   public void testParallel() {
 	       //Results results = Runner.path("classpath:com/example/api-tests.feature").tags("@done").outputCucumberJson(true).parallel(1);

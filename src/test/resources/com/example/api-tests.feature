@@ -7,6 +7,7 @@ Background:
 @Get
   Scenario: Testing a simple GET request
    
+   
    # Define the base URL suffix
     Given path 'posts/1'
     When method GET
