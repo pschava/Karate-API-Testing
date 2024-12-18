@@ -29,8 +29,9 @@ public class KarateTestRunner {
 	
 	@Test
 	   public void testParallel() {
-	       //Results results = Runner.path("classpath:com/example/api-tests.feature").tags("@done").outputCucumberJson(true).parallel(1);
-	       Results results = Runner.path("classpath:com/example/api-tests.feature").outputCucumberJson(true).parallel(1);
+	       //Results results = Runner.path("classpath:com/example/AuthenticateToken.feature").tags("@done").outputCucumberJson(true).parallel(1);
+	       Results results = Runner.path("classpath:com/example/AuthenticateToken.feature").outputCucumberJson(true).parallel(1);
+	       //Results results = Runner.path("classpath:com/example/").outputCucumberJson(true).parallel(1);
 	       //Results results = Runner.path("classpath:com/example/auth-and-protected-test.feature").outputCucumberJson(true).parallel(1);
 	       generateReport(results.getReportDir());
 	       System.out.println("this is "+results.getReportDir());
@@ -49,6 +50,7 @@ public class KarateTestRunner {
 	    }
 	  
 }
+
 
 
 

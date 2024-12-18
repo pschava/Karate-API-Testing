@@ -3,6 +3,7 @@ Feature: Example API test
 Background:
 # Define the base URL
 * url baseUrl
+* print 'request url' + baseUrl
 
 @Get
   Scenario: Testing a simple GET request

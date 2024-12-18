@@ -36,10 +36,15 @@ function fn() {
 	  config.baseUrl = 'http://prod.myapi.com';
 	  config.username = 'prodUser';
 	  config.password = 'prodPassword';
-	}
+	} else if (env === 'mock') {
+  	  config.baseUrl = 'http://desktop-9is6ipf:8080';
+  	  config.username = 'prodUser';
+  	  config.password = 'prodPassword';
+  	}
 	
 	karate.configure('connectTimeout', 5000);
-	karate.configure('readTimeout', 5000);	
+	karate.configure('readTimeout', 5000);
+    	
 
 
     // Karate-specific configuration for reporting and other settings
