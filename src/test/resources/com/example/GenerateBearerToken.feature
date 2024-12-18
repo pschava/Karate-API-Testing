@@ -3,6 +3,7 @@ Feature: Generate Bearer Token
 	Background: 
 	     * configure ssl = true 
 
+
 	Scenario: Fetch Token Code 
 
 		Given url 'http://localhost:8080/oauth/token' 

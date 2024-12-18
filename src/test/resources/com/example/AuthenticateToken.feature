@@ -1,5 +1,4 @@
 
-
 Feature: Validate authentication feature 
 
 	Background: 

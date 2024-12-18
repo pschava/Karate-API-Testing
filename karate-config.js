@@ -2,6 +2,7 @@ function fn() {
 	var env = karate.env; // get system property 'karate.env'
 	 karate.log('karate.env system property is:', env);
 
+	 
 	 // Default environment
 	 if (!env) {
 	   env = 'dev';

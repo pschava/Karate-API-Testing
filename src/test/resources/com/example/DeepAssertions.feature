@@ -1,3 +1,4 @@
+
 Feature: Advanced deep JSON assertion validation in Karate
 
   Scenario: Validate data types, non-null values, and booleans in JSON response
